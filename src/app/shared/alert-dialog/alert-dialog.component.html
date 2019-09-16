@@ -1,0 +1,7 @@
+<div (click)="$event.stopPropagation()">
+    <h1 mat-dialog-title>{{title}}</h1>
+    <div mat-dialog-content [innerHTML]="message"></div>
+    <div mat-dialog-actions>
+        <button class="mx-auto" mat-button mat-dialog-close cdkFocusInitial>{{closeButtonText}}</button>
+    </div>
+</div>
